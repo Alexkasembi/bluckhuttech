@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluck Hut Tech Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="h-8 w-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-2">BH</div>
+                        <span class="text-xl font-bold text-gray-800 dark:text-white">Bluck Hut Tech Services</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#services" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#about" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#contact" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium">Contact</a>
+                    <a href="#payment" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium">Payment</a>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-800 dark:text-white hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 pb-3 px-2">
+            <a href="#home" class="block px-3 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-base font-medium">Home</a>
+            <a href="#services" class="block px-3 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-base font-medium">Services</a>
+            <a href="#about" class="block px-3 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-base font-medium">About</a>
+            <a href="#contact" class="block px-3 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-base font-medium">Contact</a>
+            <a href="#payment" class="block px-3 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-base font-medium">Payment</a>
+            <div class="px-3 py-2">
+                <button id="mobile-theme-toggle" class="flex items-center text-gray-800 dark:text-white">
+                    <i class="fas fa-moon dark:hidden mr-2"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300 mr-2"></i>
+                    Toggle Theme
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Innovative Tech Solutions for Your Business</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                Bluck Hut Tech Services provides cutting-edge digital solutions to help your business thrive in the modern world. From web development to digital marketing, we've got you covered.
+            </p>
+            <div class="mt-8">
+                <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block mr-4 transition duration-300">
+                    Our Services
+                </a>
+                <a href="#contact" class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+        <div class="mt-12 flex justify-center">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Tech Services" class="rounded-lg shadow-xl w-full max-w-4xl">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100 dark:bg-gray-800 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Our Services</h2>
+                <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Comprehensive digital solutions tailored to your business needs
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-laptop-code text-blue-600 dark:text-blue-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Website Development</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Custom websites and portfolios designed to showcase your brand and attract customers.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-search-dollar text-green-600 dark:text-green-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">SEO Optimization</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Improve your search engine rankings and drive more organic traffic to your website.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                                <i class="fab fa-wordpress text-purple-600 dark:text-purple-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">WordPress/Custom Sites</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Professional WordPress solutions or completely custom websites built to your specifications.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-100 dark:bg-yellow-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-bullhorn text-yellow-600 dark:text-yellow-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Digital Marketing</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Comprehensive digital marketing including SEO, SEM, social media, and content marketing.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 dark:bg-red-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-hand-holding-usd text-red-600 dark:text-red-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Loan Management</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Custom systems to manage loans, payments, and customer accounts efficiently.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-mobile-alt text-indigo-600 dark:text-indigo-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mobile Wallet Integration</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Seamless integration with mobile payment solutions like M-Pesa for your business.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 7 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-blue-600 dark:text-blue-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">E-learning Systems</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Online learning platforms with course management, student tracking, and interactive features.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 8 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-hospital text-green-600 dark:text-green-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Clinic Booking</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Online appointment scheduling and patient records management for healthcare providers.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 9 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-file-invoice-dollar text-purple-600 dark:text-purple-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">KRA Services</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Assistance with Kenya Revenue Authority services including tax filing and compliance.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 10 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-100 dark:bg-yellow-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-keyboard text-yellow-600 dark:text-yellow-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Bulk Typing</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Professional typing services for documents, meeting transcripts, and data entry.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 11 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 dark:bg-red-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-id-card text-red-600 dark:text-red-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Driving License Renewal</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Assistance with online driving license renewal and related services.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 12 -->
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-tasks text-indigo-600 dark:text-indigo-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Online Assignments</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Professional assistance with academic and professional online assignments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">About Bluck Hut Tech Services</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Founded in 2020, Bluck Hut Tech Services has been at the forefront of providing innovative digital solutions to businesses of all sizes. Our team of experienced professionals is dedicated to helping our clients navigate the digital landscape with ease.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    We believe in building long-term relationships with our clients by delivering high-quality services tailored to their specific needs. Our approach combines technical expertise with a deep understanding of business requirements.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300">
+                    Whether you're a startup looking to establish your online presence or an established business seeking to optimize your digital operations, we have the tools and expertise to help you succeed.
+                </p>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Our Team" class="rounded-lg shadow-xl w-full">
+                <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-4 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-lg">12+ Years Combined Experience</h3>
+                    <p class="text-sm">Across our team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="py-16 bg-gray-100 dark:bg-gray-800 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Make a Payment</h2>
+                <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
+                    Secure and convenient payment options
+                </p>
+            </div>
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6">M-Pesa Payment</h3>
+                <div class="mb-6">
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">To pay via M-Pesa:</p>
+                    <ol class="list-decimal list-inside text-gray-600 dark:text-gray-300 space-y-2">
+                        <li>Go to M-Pesa on your phone</li>
+                        <li>Select "Pay Bill"</li>
+                        <li>Enter business number: <span class="font-bold">123456</span></li>
+                        <li>Enter account number: <span class="font-bold">Your Name</span></li>
+                        <li>Enter the amount</li>
+                        <li>Enter your M-Pesa PIN and confirm</li>
+                    </ol>
+                </div>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white">
+                    </div>
+                    <div>
+                        <label for="amount" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Amount (KES)</label>
+                        <input type="number" id="amount" name="amount" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Service</label>
+                        <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white">
+                            <option value="">Select a service</option>
+                            <option value="website">Website Development</option>
+                            <option value="seo">SEO Optimization</option>
+                            <option value="wordpress">WordPress Site</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="loan">Loan Management System</option>
+                            <option value="mobile">Mobile Wallet Integration</option>
+                            <option value="elearning">E-learning System</option>
+                            <option value="clinic">Clinic Booking System</option>
+                            <option value="kra">KRA Services</option>
+                            <option value="typing">Bulk Typing</option>
+                            <option value="license">Driving License Renewal</option>
+                            <option value="assignments">Online Assignments</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+                            Confirm Payment
+                        </button>
+                    </div>
+                </form>
+                <div id="payment-confirmation" class="hidden mt-6 p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-md">
+                    <p class="font-bold">Payment Submitted Successfully!</p>
+                    <p>We've received your payment details. You'll receive an M-Pesa confirmation shortly. Thank you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Contact Us</h2>
+            <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Get in touch with our team for inquiries or support
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-phone text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-900 dark:text-white">Phone</h4>
+                            <p class="text-gray-600 dark:text-gray-300">+254 712 345 678</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-envelope text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-900 dark:text-white">Email</h4>
+                            <p class="text-gray-600 dark:text-gray-300">info@bluckhuttech.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-map-marker-alt text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-900 dark:text-white">Address</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h4 class="text-lg font-medium text-gray-900 dark:text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 text-white p-3 rounded-full transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Send Us a Message</h3>
+                <form class="space-y-6">
+                    <div>
+                        <label for="contact-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
+                        <input type="text" id="contact-name" name="contact-name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white">
+                    </div>
+                    <div>
+                        <label for="contact-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                        <input type="email" id="contact-email" name="contact-email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white">
+                    </div>
+                    <div>
+                        <label for="contact-subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                        <input type="text" id="contact-subject" name="contact-subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white">
+                    </div>
+                    <div>
+                        <label for="contact-message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div id="contact-confirmation" class="hidden mt-6 p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-md">
+                    <p class="font-bold">Message Sent Successfully!</p>
+                    <p>We've received your message and will get back to you shortly. Thank you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Virtual Assistant -->
+    <div id="virtual-assistant" class="fixed bottom-6 right-6 z-20">
+        <div id="assistant-button" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg cursor-pointer transition duration-300">
+            <i class="fas fa-robot text-2xl"></i>
+        </div>
+        <div id="assistant-chat" class="hidden bg-white dark:bg-gray-800 rounded-lg shadow-xl w-80 h-96 absolute bottom-20 right-0 flex flex-col border border-gray-200 dark:border-gray-700">
+            <div class="bg-blue-600 dark:bg-blue-800 text-white p-4 rounded-t-lg flex justify-between items-center">
+                <h3 class="font-bold">Virtual Assistant</h3>
+                <button id="close-assistant" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto text-gray-800 dark:text-gray-200">
+                <div class="mb-4">
+                    <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-3 max-w-xs">
+                        <p>Hello! How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex">
+                    <input type="text" id="chat-input" placeholder="Type your message..." class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-l-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                    <button id="send-message" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="h-8 w-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-2">BH</div>
+                        <span class="text-xl font-bold text-white">Bluck Hut Tech Services</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Providing innovative digital solutions to help your business thrive in the modern world.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        <li><a href="#payment" class="text-gray-400 hover:text-white transition duration-300">Payment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Digital Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Loan Systems</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">E-learning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">KRA Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">+254 712 345 678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">info@bluckhuttech.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href
