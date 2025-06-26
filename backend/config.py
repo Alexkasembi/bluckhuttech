@@ -7,10 +7,10 @@ class Config:
     SECRET_KEY = os.getenv('SECRET_KEY')
     
     # M-Pesa Configuration
-    MPESA_CONSUMER_KEY = os.getenv('MPESA_CONSUMER_KEY')
-    MPESA_CONSUMER_SECRET = os.getenv('MPESA_CONSUMER_SECRET')
+    MPESA_CONSUMER_KEY = os.getenv('U8rMQFUESQ8Xo5brswQxGoN7lAMfjzkGW7h6v5VUp3r')
+    MPESA_CONSUMER_SECRET = os.getenv('rpkP8Y79tttLCG0PjphAykjGZY3aY7Yuoqg7Ditf8CmvFTYNdRlLtcyLiu')
     MPESA_PASSKEY = os.getenv('MPESA_PASSKEY')
-    MPESA_SHORTCODE = os.getenv('MPESA_SHORTCODE')
+    MPESA_SHORTCODE = os.getenv('N/A')
     MPESA_CALLBACK_URL = os.getenv('MPESA_CALLBACK_URL')
     BUSINESS_SHORTCODE = os.getenv('BUSINESS_SHORTCODE')
     
